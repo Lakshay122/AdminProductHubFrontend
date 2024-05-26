@@ -1,0 +1,44 @@
+.container {
+    margin: 20px;
+  }
+  
+  // Default table styles
+  .ant-table {
+    background-color: blue;
+    // Your default table styles here
+  }
+  
+  // Media query for mobile screens
+  @media screen and (max-width: 700px) {
+    .table-layout {
+      width: 100%;
+    }
+  
+    .ant-table {
+      .ant-table-thead {
+        width: 100%;
+        display: none; // Hide the table header for mobile
+      }
+  
+      .ant-table-tbody {
+        border: none;
+        max-width: max-content;
+        min-width: min-content;
+        display: flex;
+        flex-direction: column;
+  
+        .ant-table-row {
+          width: 100%;
+          border: 1px solid #e8e8e8; // Add border to separate cards
+          margin-bottom: 10px; // Add some space between cards
+  
+          .ant-table-cell {
+            display: block;
+            width: 100%;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+  
